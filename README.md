@@ -35,8 +35,10 @@ BruteX is A bruteForce attacking tool
 + ```cd BruteX```
 + ```chmod +x *```
 + ```bash setup.sh``` or ```./setup.sh```
-+```unzip bruteX.zip```
-+```zip password : Contact Me👈```
+
++ ```unzip bruteX.zip```
+
++ ```zip password : Contact Me👈```
 
 #### Now wait for installation of the tool, If your setup is completed then you can run it by this
 ``` python bruteX.py ``` or ``` python3 bruteX.py ```
