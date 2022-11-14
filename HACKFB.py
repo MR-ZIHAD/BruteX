@@ -109,16 +109,16 @@ class FaceBoom(object):
 ••••••••••••••••••••••••••••••••••
 [---]  """+wi+"""BruteForce Facebook  """+gr+""" [---]
 ••••••••••••••••••••••••••••••••••
-[---]         """+yl+"""MR-ZIHAD"""+gr+"""       [---]
+[---]       """+yl+"""MR-ZIHAD"""+gr+"""         [---]
 ••••••••••••••••••••••••••••••••••
 [>] Target      :> """+wi+target+gr+"""
 {}""".format("[>] Wordlist    :> "+yl+str(wordlist) if not single_passwd else "[>] Password    :> "+yl+str(single_passwd))+gr+"""
 [>] ProxyStatus :> """+str(proxystatus)+wi)
         if not single_passwd:
             print(gr+"""\
-•••••••••••••••••••••••••••••••••••••••••••••••••••••••••"""+wi+"""
+••••••••••••••••••••••••••••••••••"""+wi+"""
 [~] """+yl+"""Brute"""+rd+""" ForceATTACK: """+gr+"""Enabled """+wi+"""[~]"""+gr+"""
-•••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n"""+wi)
+••••••••••••••••••••••••••••••••••\n"""+wi)
         else:print("\n")
 
 
