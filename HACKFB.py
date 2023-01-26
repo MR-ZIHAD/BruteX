@@ -83,7 +83,7 @@ class FaceBoom(object):
     def login(self,target, password):
 
         try:
-            self.br.open("https://mbasic.facebook.com")
+            self.br.open("https://m.facebook.com")
             self.br.select_form(nr=0)
             self.br.form['email']=target
             self.br.form['pass']= password
