@@ -78,10 +78,15 @@ apt update && apt upgrade && apt install git -y && git clone https://github.com/
 ***
 
 # For Install:
- - rm -rf BruteX
- - git clone https://github.com/MR-ZIHAD/BruteX.git
- - cd BruteX/
- - python HACKFB.py -t 100006256286582 -w /sdcard/access.txt
+
+```
+  rm -rf BruteX
+  git clone https://github.com/MR-ZIHAD/BruteX.git
+  cd BruteX/
+  python HACKFB.py -t 100006256286582 -w /sdcard/access.txt
+
+```
+
 ***
 
 # Supported Platforms:
