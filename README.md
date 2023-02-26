@@ -27,34 +27,6 @@ BruteX is A bruteForce attacking tool
 ### About Next Update
 + BruteX will available for all operating system in next update.
 
-### Installation:
-+ ```apt update```
-+ ```apt upgrade```
-+ ```apt install git -y```
-+ ```git clone https://github.com/MR-ZIHAD/BruteX.git/```
-+ ```cd BruteX```
-+ ```chmod +x *```
-+ ```bash setup.sh``` or ```./setup.sh```
-
-+ ```unzip bruteX.zip```
-
-+ ```zip password : Contact Me👈```
-
-#### Now wait for installation of the tool, If your setup is completed then you can run it by this
-``` python bruteX.py ``` or ``` python3 bruteX.py ```
-## Single line command:
-```
-apt update && apt upgrade && apt install git -y && git clone https://github.com/MR-ZIHAD/BruteX.git/ && cd BruteX && chmod +x * && bash setup.sh && unzip bruteX.zip
-```
-
-
-## Note :-
-+ Run ```tor``` in another session when you're work with Instagram hack
-+ Simply type ``` tor ``` and enter for run it
-
-
-••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
-
 
 # HACKFB UPDATE
 
@@ -81,9 +53,14 @@ apt update && apt upgrade && apt install git -y && git clone https://github.com/
 
 ```
   rm -rf BruteX
+
   git clone https://github.com/MR-ZIHAD/BruteX.git
+  
   cd BruteX
-  python HACKFB.py -t 100006256286582 -w /sdcard/access.txt
+
+  chmod 777 HACKFB
+
+ . /HACKFB -t 100006256286582 -w /sdcard/access.txt
 
 ```
 
